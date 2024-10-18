@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@400;500&family=Oswald&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root{
+    --primary-color:#28A745;
+    --border-color:#c4c4c4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", system-ui;
+    text-decoration: none;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.home{
+    margin-left: 1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.search-box input{
+    width: 17rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 1px solid rgb(235,235,235);
+    background-color: rgb(249,249,249);
+}
+
+.magnifying{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+    border: 1px solid rgb(235,235,235);
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.magnifying img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.landing{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+header{
+    /* width: 100vw; */
+    /* height: 6rem; */
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-content: center;
+    border: 1px solid #c4c4c4;
+}
+
+.logo{
+    padding-left: 2rem;
+}
+
+.logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.icons{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.game{
+    width: 2rem;
+    height: 2rem;
+}
+
+.mac{
+    width: 1.3rem;
+    height: 2rem;
+}
+
+.header-ele{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    justify-content: center;
+    color:#000;
+    font-weight: 400;
+    border-left: 1px solid #c4c4c4;
+    transition: 0.2s ease;
+}
+
+.header-ele:hover{
+    background-color: var(--primary-color);
+    color:#fff;
+}
+
+.three-line img{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width:1018px) {
+    header{
+        display: none;
+
+    }
+    .three-line img{
+        display: flex;
+    }
+    .landing span{
+        display: none;
+    }
+}
+
+.os{
+    display: flex;
+    max-width: 1080px;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.card-grid{
+    max-width: 1280px;
+    display: grid;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+@media screen and (max-width:1190px) {
+    .card-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:910px) {
+    .card-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:500px) {
+    .card-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid var(--border-color) ;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color:#000;
+    transition: 0.2s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    
+}
+
+.card img{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+
+.filename{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.free-paid{
+    display: flex;
+    flex-direction: column;
+    color:var(--primary-color);
+}
+.free-paid p{
+    color:#000;
+    font-size: 1.2rem;
+}
+
+.description{
+    font-size: 0.7rem;
+}
+
+.compatibility{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.compatibility img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.size{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
