@@ -225,3 +225,24 @@ header{
     font-size: 1.1rem;
     font-weight: 400;
 }
+
+.fastd a{
+    display: flex;
+    background-color: #d13030;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 210px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.fastd a:hover {
+    background-color: #fc3d3d;
+}
+
+.fastd a span{
+    text-decoration: none;
+    color:white;
+}
